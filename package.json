@@ -4,7 +4,8 @@
   "description": "Practice with Filter and Map",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 11000 -R mocha-multi --reporter-options nyan=-,json=.results.json",
+    "start": "python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",

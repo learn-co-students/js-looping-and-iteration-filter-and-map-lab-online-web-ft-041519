@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
   </head>
-
+  
   <body>
     <!-- <div> for Mocha to display test results. -->
     <div id="mocha"></div>
@@ -17,7 +17,8 @@
     <!-- Include Mocha and set it up for BDD-style testing. -->
     <script src="node_modules/mocha/mocha.js"></script>
     <script>mocha.setup('bdd');</script>
-
+    <script type="module">mocha.run()</script>
+    
     <!-- Include Chai as the matcher library. -->
     <script src="node_modules/chai/chai.js"></script>
 
@@ -29,5 +30,6 @@
 
     <!-- Include Flatiron School's test runner to push results to Learn. -->
     <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
+
   </body>
 </html>
